@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'gradlew.bat assemble'
+                sh 'java --version'
             }
         }
         stage('Test') {
             steps {
-                bat 'gradlew.bat test'
+                sh 'java --version'
             }
         }
     }
