@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh './gradlew assemble'
+                bat './gradlew assemble'
             }
         }
         stage('Test') {
             steps {
-                sh './gradlew test'
+                bat './gradlew test'
             }
         }
     }
